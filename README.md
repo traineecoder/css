@@ -29,10 +29,23 @@ We can set color with hex values like #FFFFFF, rgb(255,255,255), hsl(100%,100%,5
 
 # CSS Units
 There are different units to specify sizes in CSS like px,inches etc., pixels is the common one used for starters. It is better to avoid absolute values as it creates problems for other parts of CSS. Instead we should 'relative to parent' and 'relative to root' concepts for configuring sizes. And for somethings we can use absolute values like borders etc.,<br>
-We use em units mostly for paddings,margins etc., and rem units for font size.<br>
+The rem units are relative to root.<br>
+The em units are relative to font size of current if mentioned otherwise its relative to its parents font_size.<br>
+We use em units for properties if font size is mentioned in our scope or according to our use-case.<br>
 The ch units specifies the width of characters in lines.<br>
 The usage of percentages is best for defining widths.<br>
 We can select the whole body page by using 'min-height: 100vh;' and expand as the content goes on.<br>
+
+# Box model
+As the changes that are not specified by us in CSS, the browser will set up those valuse, To avoid this we use CSS reset which helps to reset everything from the start and apply our configurations to webpage.<br>
+The content-box in box-sizing is applies to only content i.e., if we mention a width to content all space is used by content in addition to padding and border. The border-box in box-sizing is applies to content, padding and border. Hence, the width will be aggregated to all of those.<br>
+In box model, we commonly consider padding,margin, borders, outlines etc.,<br>
+The thing about the outline is, it doesn't consume space in box.<br>
+We can change looks of box with box-radius property.<br>
+
+# Typography
+Typography is the way that text is arranged and presented.<br>
+
 
 
 

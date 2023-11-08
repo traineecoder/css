@@ -3,17 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
+/* body {
     background: papayawhip;
     min-height: 100vh;
+} */
+.container {
+    border: 10px double blueviolet;
+    /* we can't put all sides in one line like margin and padding */
+    /* border-top: 10px solid;
+    border-bottom: 10px solid;
+    border-right: 10px solid;
+    border-left: 10px solid; */
+    font-size: 1.5rem;
+    margin: 1.5em;
+    /* margin: 2em auto; /* center to left and right */
+    /* margin: 1.5em 2em 2em; /*top,right-left,bottom*/
+    /* margin: 1.5em 2em; /*top-bottom,right-left*/
+    /* margin: 1.5em 2em 2em 2em; /*right,top,bottom,left*/ 
+    /* margin-top: 1.5em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 2em; */
+    padding: 1.5em;
+    /* padding: 1.5em 1.5em 2em 2em; /*right,top,bottom,left*/ 
+    outline: 5px solid darkorange;
+    outline-offset: -20px;
 }
-h1{
-    border: 2px dashed blueviolet;
-    width: 50%;
-    font-size: 3rem;
-    padding: 0.5em; /* relative to the font-size i.e., 16px is root font-size and 48px for h1 */
+.circle {
+    background-color: wheat;
+    border: 2px solid darkolivegreen;
+    border-radius: 50px;
+    margin: 2.5rem auto;
+    width: 100px;
+    height: 100px;
+    outline: 2px solid rebeccapurple;
+    outline-offset: 0.5rem;
 }
-p {
+/* p {
     color: #001e4a;
     font-size: 1.3rem;
-}
+} */
