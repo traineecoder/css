@@ -1,3 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: papayawhip;
+    min-height: 100vh;
+}
+h1{
+    border: 2px dashed blueviolet;
+    width: 50%;
+    font-size: 3rem;
+    padding: 0.5em; /* relative to the font-size i.e., 16px is root font-size and 48px for h1 */
+}
 p {
-    color: magenta;
+    color: #001e4a;
+    font-size: 1.3rem;
 }
