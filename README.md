@@ -53,6 +53,10 @@ Pseudo-classes can be accessed by putting colon after the element.<br>
 The order is important while using pseudoclasses.<br>
 
 # List Styles
+We have different methodologies for editing lists.For example, using pseudo-elements like marker, pseudo-classes like nth-child etc.,<br>
+We can also change attributes of elements in html for different use-cases.<br>
+
+
 
 
 
