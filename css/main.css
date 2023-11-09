@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* body {
+
+body {
     background: papayawhip;
     min-height: 100vh;
-} */
+    font-family: 'Dancing Script', cursive;
+}
 .container {
     border: 10px double blueviolet;
     /* we can't put all sides in one line like margin and padding */
@@ -39,7 +43,31 @@
     outline: 2px solid rebeccapurple;
     outline-offset: 0.5rem;
 }
-/* p {
-    color: #001e4a;
-    font-size: 1.3rem;
+p {
+    text-decoration:none;
+    text-transform: initial;
+    text-align: left;
+    text-indent:unset;
+    line-height: 1.5;
+    letter-spacing: unset;
+    word-spacing: unset;
+    font-weight: normal;
+    font-style: normal;
+}
+a{
+    text-decoration: underline;
+    cursor:pointer;
+    color: hsl(219, 57%, 43%);
+}
+/* a:visited{
+    color:saddlebrown;
 } */
+a:hover,a:focus{
+    /* color: hsl(184, 57%, 43%); */
+    /* opacity: 0.7; */
+    color:hsl(219, 57%, 43%,0.7);
+    background-color: violet;
+}
+a:active{
+    color: yellowgreen;
+}

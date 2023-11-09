@@ -45,6 +45,14 @@ We can change looks of box with box-radius property.<br>
 
 # Typography
 Typography is the way that text is arranged and presented.<br>
+There are many ways we can manipulate text and can also import fonts from other resources on web.<br>
+
+# Styling links
+Links can be styled according to our needs, we can change the defaults to make our link look good.<br>
+Pseudo-classes can be accessed by putting colon after the element.<br>
+The order is important while using pseudoclasses.<br>
+
+# List Styles
 
 
 
