@@ -71,10 +71,10 @@ a:hover,a:focus{
 a:active{
     color: yellowgreen;
 }
-ol {
+section ol {
     list-style-type:lower-alpha;
 }
-ul {
+section ul {
     list-style-type: square;
     text-align: center;
     list-style-position: inside;
@@ -88,8 +88,37 @@ li:nth-child(odd){
     color: magenta;
 }
 
-ul ::marker{
+section ul ::marker{
     color:black;
     font-size: 1em;
     content: 'sha-bang--> ';
+}
+.block{
+    width:30vw;
+    height:30vw;
+    background-color: #000;
+    color:white;
+    padding:1rem;
+}
+
+.left {
+    float: left;
+    margin-right: 1em;
+}
+/* .float p {
+    margin-left: 1em;
+} It will not work because margin will span from left side of float and para is on right */
+/* .clear{
+    clear:both;
+} /*It is way to clear data from float but it doesn't span the background for float As it depends on the paragraph*/
+.right{
+    float:right;
+    margin-left: 1em;
+}
+.float {
+    background-color: mediumorchid;
+    border: 2px solid #000;
+    padding: 1em;
+    /*overflow: auto; /* old way to span background float*/
+    display: flow-root; /* new way to span background across float*/
 }

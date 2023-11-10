@@ -1,0 +1,32 @@
+body{
+    font-family:sans-serif;
+    font-size: 1.5rem;
+}
+
+.columns{
+    /* column-count: 4;
+    column-width: 250px;/*This make sure that to maintain 4 columns if width is 250px of each column */
+    columns: 4 250px;
+    column-rule: 2px solid black;
+}
+.columns p{
+    margin-top: 0;
+}
+.columns h2{
+    margin-top: 0;
+    background-color: #333;
+    color: #fff;
+    break-inside: avoid-column;
+    /* break-before: column;/*This makes the content shrink */
+}
+
+/*this should be more specific than .columns p otherwise margin will not be changed*/
+.columns .quotes {
+    margin-top: 1em;
+    color:#333;
+    font-size: 3rem;
+    column-span: all;
+}
+.nowrap{
+    white-space: nowrap;
+}

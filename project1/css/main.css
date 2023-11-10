@@ -14,7 +14,6 @@ nav{
 }
 ul{
     border: 2px solid;
-    max-width: fit-content;
 }
 li {
     display: inline-block;

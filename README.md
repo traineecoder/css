@@ -56,6 +56,13 @@ The order is important while using pseudoclasses.<br>
 We have different methodologies for editing lists.For example, using pseudo-elements like marker, pseudo-classes like nth-child etc.,<br>
 We can also change attributes of elements in html for different use-cases.<br>
 
+# Float
+We can use floats to float  things left or right and In olden days we also used floats for creating columns in web but now-a-days we use flex and grids.<br>
+'float' property is used for creating floats and clear property is used to 'clear' the information from floats which is a old way. now we use 'display' property to containerize floats.
+
+# Columns
+When multiple paragraph overlap in columns, margins are collapsed to 1 instead of 2 margin spaces i.e., one from up and one from down.
+
 
 
 
