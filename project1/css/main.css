@@ -1,0 +1,33 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: papayawhip;
+}
+header{
+    font-size: 2rem;
+}
+nav{
+    padding:0.25em;
+}
+ul{
+    border: 2px solid;
+    max-width: fit-content;
+}
+li {
+    display: inline-block;
+}
+
+li a, li a:visited {
+    display: block;
+    text-decoration:none;
+    color:black;
+}
+li a:hover,li a:focus {
+    background-color: lightsalmon;
+}
+li a:active{
+    background-color: lightgreen;
+}
