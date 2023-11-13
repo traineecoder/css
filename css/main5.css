@@ -1,0 +1,77 @@
+/*grid layout*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-auto-rows: 75px auto 75px;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd hd"
+    "mn mn mn mn mn mn mn sb sb"
+    "ft ft ft ft ft ft ft ft ft"
+    ;
+    gap:1rem;
+}
+
+/* reduces copying using this 'el' class like this */
+.el{
+    background-color: steelblue;
+    color:#fff;
+    display: grid;
+    place-content: center;
+}
+
+.header{
+    grid-area: hd;
+}
+.sidebar{
+    grid-area: sb;
+    background-color: violet;
+}
+.footer{
+    grid-area: ft;
+}
+/* careful using grid options we may override each other options*/
+.container{
+    grid-area: mn;
+    display: grid;
+    /* min-height: 100px ;/*This height is not applied as minmax's minimum is 150px */
+    /* grid-auto-flow: column; */
+    grid-template-columns: 2fr 1fr 1fr;/*fraction units are used specifically for grids*/
+    /* grid-template-columns: repeat(4,1fr);/* For 4 columns 1fr */
+    /* grid-template-columns: repeat(2,1fr 2fr);/* For 1st column 1fr and 2nd column 2fr and so on. */
+    /* grid-auto-rows: 200px; */
+    grid-auto-rows: minmax(150px,auto);/*This allows setting minimun and maximum row length*/
+    /* grid-template-rows:1fr 1fr;/* each row size */
+    row-gap: 1rem;
+    column-gap: 1rem;
+    /* gap:1em 1em;/*row gap,column gap */
+}
+.box{
+    background-color: black;
+    color:white;
+    font-size: 2rem;
+    padding:0.5rem;
+}
+
+.box:first-child{
+    background-color:blueviolet;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    /* align-content: center;
+    justify-content: center; */
+    display: grid;
+    place-content: center;/*align content, justify content*/
+}
+.box:nth-child(2){
+    background-color: khaki;
+    grid-column: 2/3;
+    grid-row: 1/4;
+}

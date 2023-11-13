@@ -58,12 +58,34 @@ We can also change attributes of elements in html for different use-cases.<br>
 
 # Float
 We can use floats to float  things left or right and In olden days we also used floats for creating columns in web but now-a-days we use flex and grids.<br>
-'float' property is used for creating floats and clear property is used to 'clear' the information from floats which is a old way. now we use 'display' property to containerize floats.
+'float' property is used for creating floats and 'clear' property is used to clear the information from floats which is a old way. 'overflow' property is old way, now we use 'display' property to containerize floats.
 
 # Columns
-When multiple paragraph overlap in columns, margins are collapsed to 1 instead of 2 margin spaces i.e., one from up and one from down.
+When multiple paragraph overlap in columns, margins are collapsed to 1 instead of 2 margin spaces i.e., one from up and one from down.<br>
+It is important to check out for specificity as we are configuring same property multiple places.<br>
+Make sure applying the new things doesn't make webpage look weird.<br>
 
+# Positions
+There are 4 common position Types:
+<ul>
+<li>Absolute</li>
+<li>Relative</li>
+<li>Fixed</li>
+<li>Sticky</li>
+</ul>
+Absolute is also used to remove the object from screen but we can use it. Instead of opacity reducing and removing display.<br>
+For smoothing scrolling upon clicking, use property from html element.<br>
 
+# flexbox
+Flex box has many features of organizig the data in a container. Some of them are justifying content, aligning items, positioning the content in the box etc.,<br>
+Manual positioning is not recommended as it will disrupt the operations on flex box<br>
+
+# Grid Layout
+Grid has many features of organizing the page. Grid uses a specific unit for it called 'fr' to setup different grids.<br>
+Manual positioning is not recommended for each grid.
+
+# Images
+It is good to setup width in percentages so the website is responsive.
 
 
 

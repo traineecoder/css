@@ -1,0 +1,100 @@
+/* postions */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.5rem;
+    min-height: 300vh;
+}
+
+.outer-container{
+    border:3px dashed #000;
+    width:75vw;
+    height:200vh;
+    margin:40px auto; /* top-bottom 40px and left-right auto*/
+    position: relative;
+}
+
+.inner-container{
+    border:2px solid darkgoldenrod;
+    width: 40vw;
+    height: 150vh;
+    margin:200px auto;
+}
+.box{
+    width:150px;
+    height: 150px;
+    color:#fff;
+    padding:1rem;
+}
+
+/*if there is no relative ancestor to it. Then, postitions is acted on the browser window*/
+.absolute{
+    background-color: blue;
+    position: absolute; /* default is static*/
+    top:100px;
+    left: -10000px;
+}
+
+.relative{
+    background-color: purple;
+    position: relative;/* It is always relative to its parent container */
+    top:100px;
+    left: 100px;
+}
+.fixed {
+    background-color: yellowgreen;
+    position: fixed;
+    top:100px;
+    z-index: 0;
+}
+.sticky{
+    background-color: indigo;
+    position: sticky;
+    top: 50px;
+    left:80px;
+}
+
+/* ////// */
+html{scroll-behavior: smooth;}
+section {
+    height: 100vh;
+}
+.blue{background-color: blue;}
+.red{background-color: red;}
+.green{background-color: green;}
+
+header{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+footer{
+    background-color: black;
+    color:white;
+    width: 100%;
+    font-size: 2rem;
+    position: sticky;
+    bottom: 0;
+}
+a:visited{
+    color:white;
+}
+
+.social{
+    background-color: maroon;
+    color: antiquewhite;
+    font-size: inherit;
+    padding:1rem;
+    position: fixed;
+    top:30%;
+    left:0;
+    z-index: 1;
+}

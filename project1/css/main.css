@@ -12,7 +12,7 @@ header{
 nav{
     padding:0.25em;
 }
-ul{
+/* ul{
     border: 2px solid;
 }
 li {
@@ -28,5 +28,27 @@ li a:hover,li a:focus {
     background-color: lightsalmon;
 }
 li a:active{
+    background-color: lightgreen;
+} */
+
+.nav{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    width: fit-content;
+}
+
+.nav a{
+    border-left: 2px solid black;
+}
+.nav a,.nav a:visited {
+    display: inline-block;
+    text-decoration:none;
+    color:black;
+}
+.nav a:hover,.nav a:focus {
+    background-color: lightsalmon;
+}
+.nav a:active{
     background-color: lightgreen;
 }
