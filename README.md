@@ -85,7 +85,11 @@ Grid has many features of organizing the page. Grid uses a specific unit for it 
 Manual positioning is not recommended for each grid.
 
 # Images
-It is good to setup width in percentages so the website is responsive.
+It is good to setup width in percentages so the website is responsive.<br>
+As a rule choose big picture to avoid stretching in other devices.<br>
+we can configure images in many ways and also have niche choices in background setup.
+
+# media queries
 
 
 

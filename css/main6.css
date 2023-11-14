@@ -23,6 +23,14 @@ img{
 }
 body{
     min-height: 100vh;
+    background-color: aliceblue;
+    /* background-image: url('../images/cherry.png'), 
+                    linear-gradient(to left,steelblue,magenta,#fff);
+    background-repeat: repeat-y,no-repeat;
+    background-position: right center;
+    background-size: 10%,auto; */
+    background: repeat-y right center url("../images/cherry.png"), no-repeat linear-gradient(to left,steelblue,magenta,#fff);
+    background-size: 10%,auto;
 }
 .example {
     margin-top: 1rem;
@@ -34,18 +42,29 @@ body{
     width:25%;
     height: auto;
 }
-
-.pictures{
+.container{
+    background-color: rgb(255, 210, 156);
+    background-image: url('../images/pic09.jpg');
+    background-repeat: no-repeat;
+    /* background-size: cover;/* to cover if image is big  */
+    background-position: center center;
+}
+.picture-section{
     border-bottom: 2px solid #000;
     padding: 1rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap:30px;
+    background-color: hsla(0, 0%, 0%, 0.393);
 }
 
 .h2{
     font-size: 500%;
+    color: antiquewhite;
+    text-shadow: 2px 2px 5px #000; 
+    /* background-color: hsla(0, 0%, 0%, 0.393); */
+    border-radius: 10px;
 }
 
 .profile-picture{
@@ -59,4 +78,22 @@ body{
     border: 5px double green;
     border-radius: 50%;
 
+}
+
+.clip{
+    border:2px solid #000;
+    max-width: 100%;
+    font-weight: 800;
+    font-size: 18rem; /*big font overflow and is not manageble for now */
+    text-align: center;
+    background-image: url('../images/pic01.jpg');
+    background-size: 100%; /* puts the whole image in background*/
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: hsla(0, 0%, 0%, 0.25);
+}
+
+@media screen and (width: 425px) {
+    
 }
