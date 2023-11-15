@@ -1,0 +1,84 @@
+/* pseudo,functions,variables*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* We can set varibles here */
+    --RADIAL:radial-gradient(aliceblue,steelblue);
+
+    /* SQUARE */
+    --SQUARE-BGCOLOR:papayawhip;
+    --SQUARE-SIZE:max(150px,20vw);
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        /* configurations for dark theme */
+        --SQUARE-BGCOLOR:lightblue;
+    }
+}
+body{
+    font-size: 1.5rem;
+    min-height: 100vh;
+    background-color: steelblue;
+    background-image: var(--RADIAL);
+    display: flex;
+    flex-direction: column;
+}
+header,footer,nav{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+nav{
+    background-color: aliceblue;
+    color:black;
+    box-shadow: 0 6px 5px -5px black;
+}
+header,footer{
+    background-color:grey;
+    color:aliceblue;
+    position: sticky;
+}
+
+header{
+    top:0;    
+}
+
+main{
+    flex-grow: 1;
+    padding: 10px 0; 
+}
+.variables-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+    flex-flow: row wrap;
+    gap: min(4vw, 15px);
+}
+.functions-section{
+font-size: min(2rem,5vh); /* smaller of two */
+}
+
+footer{
+    bottom: 0;
+}
+
+.square--highlight{
+    --SQUARE-BGCOLOR:red; /* with variable we can change but manually putting background color not change it */
+}
+.square{
+    background-color: var(--SQUARE-BGCOLOR);
+    width: var(--SQUARE-SIZE);
+    height: var(--SQUARE-SIZE);
+    border: 2px solid black;
+    border-radius: 15px;
+    display: grid;
+    place-content: center;
+    font-size: 3rem;
+    box-shadow: 0px 5px 5px -5px black;
+}

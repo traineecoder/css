@@ -89,8 +89,29 @@ It is good to setup width in percentages so the website is responsive.<br>
 As a rule choose big picture to avoid stretching in other devices.<br>
 we can configure images in many ways and also have niche choices in background setup.
 
-# media queries
+# Media Queries
+Media Queries is used to define the CSS to devices which has different resolutions like mobile, ipads etc.,<br>
+It is best practice to define media queries from mobile devices to TVs and work on step by step.<br>
+While writing these queries we should also consider about device specific things like landscapes in mobile devices etc.,
 
+# Pseudo
+Pseudo classes are the classes that are in a specific state like visited, hover etc.,. Pseudo elements are act like elements in the html like marker etc.,<br>
+Pseudo classes are preceeded with a colon and Pseudo elements are preceeded with double colons.<br>
+'root' pseudo class properties are inherited by every element.<br>
+We can make us of 'where' and 'is' pseudo classes for changing specificity.<br>
+'before' and 'after' are the common used pseudo elements in CSS.<br>
+
+# Variables
+Variables are used to change the same values from one place without manually changing everywhere.<br>
+Variables in CSS are preceed by two hypens.Once the variable defined we can use it by putting var(--variableName). <br>
+It is very common to put variables in root pseudo class.<br>
+
+# Functions
+We have many functions like min,max,clamp,calc etc., to use in many ways.<br>
+We can also create our custom abbreviations by using 'attr()' function.<br>
+'repeat' function is one of the usecase for function in grid.<br>
+
+# Animations
 
 
 
