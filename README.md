@@ -112,6 +112,19 @@ We can also create our custom abbreviations by using 'attr()' function.<br>
 'repeat' function is one of the usecase for function in grid.<br>
 
 # Animations
+- We can perform transforming actions like translate,roate,scale,skew etc., to the elements.
+- We can also perform transitions like on hover etc.,
+- animations are also performed by give animation name and writing keyframes for it.
+- animations are good if you want to perform a sequence of transitons where as transitions are good if you want changes on hover etc.,
 
+# Suggestions to Organize Your CSS
+
+- Follow Your Team
+
+- Use comments to create headers 
+
+- Sort properties alphabetically ABCSS
+
+- Larger projects follow a naming convention methodology. For example: BEM - Block, Element, Modifier
 
 
